@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="23.2" version="23.2" Modules="simple" RootPath="." Language="hu" Id="{91D8ECB9-03BE-4BE9-9C71-79460385D6B4}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="kreten_logo.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/oprof00/kreten/"/>
+    <ROW Property="Manufacturer" Value="prof00"/>
+    <ROW Property="ProductCode" Value="1038:{0F0732D4-E9BC-41C0-B95D-2864CAA82985} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Kretén"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{F3F8D493-0FB7-453C-8D0D-FD798F2B07E6}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="AutofillAiModelCache_Dir" Directory_Parent="Default_Dir" DefaultDir="AUTOFI~1|AutofillAiModelCache" DirectoryOptions="3"/>
+    <ROW Directory="AutofillStrikeDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="AUTOFI~2|AutofillStrikeDatabase" DirectoryOptions="3"/>
+    <ROW Directory="AvailabilityDB_Dir" Directory_Parent="FeatureEngagementTracker_Dir" DefaultDir="AVAILA~1|AvailabilityDB" DirectoryOptions="3"/>
+    <ROW Directory="BudgetDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="BUDGET~1|BudgetDatabase" DirectoryOptions="3"/>
+    <ROW Directory="Cache_Data_Dir" Directory_Parent="Cache_Dir" DefaultDir="CACHE_~1|Cache_Data" DirectoryOptions="3"/>
+    <ROW Directory="Cache_Dir" Directory_Parent="Default_Dir" DefaultDir="Cache" DirectoryOptions="3"/>
+    <ROW Directory="ClientCertificates_Dir" Directory_Parent="Default_Dir" DefaultDir="CLIENT~1|ClientCertificates" DirectoryOptions="3"/>
+    <ROW Directory="CodeCache_Dir" Directory_Parent="Default_Dir" DefaultDir="CODECA~1|Code Cache" DirectoryOptions="3"/>
+    <ROW Directory="Crashpad_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Crashpad" DirectoryOptions="3"/>
+    <ROW Directory="DawnGraphiteCache_Dir" Directory_Parent="Default_Dir" DefaultDir="DAWNGR~1|DawnGraphiteCache" DirectoryOptions="3"/>
+    <ROW Directory="DawnWebGPUCache_Dir" Directory_Parent="Default_Dir" DefaultDir="DAWNWE~1|DawnWebGPUCache" DirectoryOptions="3"/>
+    <ROW Directory="Default_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="Default" DirectoryOptions="3"/>
+    <ROW Directory="DownloadService_Dir" Directory_Parent="Default_Dir" DefaultDir="DOWNLO~1|Download Service" DirectoryOptions="3"/>
+    <ROW Directory="EBWebView_Dir" Directory_Parent="kretenKreta.exe.WebView2_Dir" DefaultDir="EBWEBV~1|EBWebView" DirectoryOptions="3"/>
+    <ROW Directory="EdgeEDrop_Dir" Directory_Parent="Default_Dir" DefaultDir="EDGEED~1|EdgeEDrop" DirectoryOptions="3"/>
+    <ROW Directory="EntryDB_Dir" Directory_Parent="DownloadService_Dir" DefaultDir="EntryDB" DirectoryOptions="3"/>
+    <ROW Directory="EventDB_Dir" Directory_Parent="FeatureEngagementTracker_Dir" DefaultDir="EventDB" DirectoryOptions="3"/>
+    <ROW Directory="ExtensionRules_Dir" Directory_Parent="Default_Dir" DefaultDir="EXTENS~1|Extension Rules" DirectoryOptions="3"/>
+    <ROW Directory="ExtensionScripts_Dir" Directory_Parent="Default_Dir" DefaultDir="EXTENS~2|Extension Scripts" DirectoryOptions="3"/>
+    <ROW Directory="ExtensionState_Dir" Directory_Parent="Default_Dir" DefaultDir="EXTENS~3|Extension State" DirectoryOptions="3"/>
+    <ROW Directory="FeatureEngagementTracker_Dir" Directory_Parent="Default_Dir" DefaultDir="FEATUR~1|Feature Engagement Tracker" DirectoryOptions="3"/>
+    <ROW Directory="GPUCache_Dir" Directory_Parent="Default_Dir" DefaultDir="GPUCache" DirectoryOptions="3"/>
+    <ROW Directory="GrShaderCache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="GRSHAD~1|GrShaderCache" DirectoryOptions="3"/>
+    <ROW Directory="GraphiteDawnCache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="GRAPHI~1|GraphiteDawnCache" DirectoryOptions="3"/>
+    <ROW Directory="Kreten_Dir" Directory_Parent="APPDIR" DefaultDir="Kreten" DirectoryOptions="3"/>
+    <ROW Directory="LevelDB_Dir" Directory_Parent="SyncData_Dir" DefaultDir="LevelDB" DirectoryOptions="3"/>
+    <ROW Directory="LocalStorage_Dir" Directory_Parent="Default_Dir" DefaultDir="LOCALS~1|Local Storage" DirectoryOptions="3"/>
+    <ROW Directory="Network_Dir" Directory_Parent="Default_Dir" DefaultDir="Network" DirectoryOptions="3"/>
+    <ROW Directory="PersistentOriginTrials_Dir" Directory_Parent="Default_Dir" DefaultDir="PERSIS~1|PersistentOriginTrials" DirectoryOptions="3"/>
+    <ROW Directory="RemoteData_Dir" Directory_Parent="SmartScreen_Dir" DefaultDir="REMOTE~1|RemoteData" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="SafeBrowsingNetwork_Dir" Directory_Parent="Default_Dir" DefaultDir="SAFEBR~1|Safe Browsing Network" DirectoryOptions="3"/>
+    <ROW Directory="SessionStorage_Dir" Directory_Parent="Default_Dir" DefaultDir="SESSIO~1|Session Storage" DirectoryOptions="3"/>
+    <ROW Directory="ShaderCache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SHADER~1|ShaderCache" DirectoryOptions="3"/>
+    <ROW Directory="SharedDictionary_Dir" Directory_Parent="Default_Dir" DefaultDir="SHARED~1|Shared Dictionary" DirectoryOptions="3"/>
+    <ROW Directory="SiteCharacteristicsDatabase_Dir" Directory_Parent="Default_Dir" DefaultDir="SITECH~1|Site Characteristics Database" DirectoryOptions="3"/>
+    <ROW Directory="SmartScreen_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="SMARTS~1|SmartScreen" DirectoryOptions="3"/>
+    <ROW Directory="SyncData_Dir" Directory_Parent="Default_Dir" DefaultDir="SYNCDA~1|Sync Data" DirectoryOptions="3"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="cache_Dir" Directory_Parent="SharedDictionary_Dir" DefaultDir="cache" DirectoryOptions="3"/>
+    <ROW Directory="commerce_subscription_db_Dir" Directory_Parent="Default_Dir" DefaultDir="COMMER~1|commerce_subscription_db" DirectoryOptions="3"/>
+    <ROW Directory="component_crx_cache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="COMPON~1|component_crx_cache" DirectoryOptions="3"/>
+    <ROW Directory="discount_infos_db_Dir" Directory_Parent="Default_Dir" DefaultDir="DISCOU~2|discount_infos_db" DirectoryOptions="3"/>
+    <ROW Directory="discounts_db_Dir" Directory_Parent="Default_Dir" DefaultDir="DISCOU~1|discounts_db" DirectoryOptions="3"/>
+    <ROW Directory="extensions_crx_cache_Dir" Directory_Parent="EBWebView_Dir" DefaultDir="EXTENS~1|extensions_crx_cache" DirectoryOptions="3"/>
+    <ROW Directory="indexdir_1_Dir" Directory_Parent="wasm_Dir" DefaultDir="INDEX-~1|index-dir" DirectoryOptions="3"/>
+    <ROW Directory="indexdir_2_Dir" Directory_Parent="cache_Dir" DefaultDir="INDEX-~1|index-dir" DirectoryOptions="3"/>
+    <ROW Directory="indexdir_Dir" Directory_Parent="js_Dir" DefaultDir="INDEX-~1|index-dir" DirectoryOptions="3"/>
+    <ROW Directory="js_Dir" Directory_Parent="CodeCache_Dir" DefaultDir="js" DirectoryOptions="3"/>
+    <ROW Directory="kretenKreta.exe.WebView2_Dir" Directory_Parent="APPDIR" DefaultDir="KRETEN~1.WEB|kretenKreta.exe.WebView2" DirectoryOptions="3"/>
+    <ROW Directory="leveldb_Dir" Directory_Parent="LocalStorage_Dir" DefaultDir="leveldb" DirectoryOptions="3"/>
+    <ROW Directory="local_Dir" Directory_Parent="SmartScreen_Dir" DefaultDir="local" DirectoryOptions="3"/>
+    <ROW Directory="metadata_Dir" Directory_Parent="shared_proto_db_Dir" DefaultDir="metadata" DirectoryOptions="3"/>
+    <ROW Directory="native_1_Dir" Directory_Parent="winx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_2_Dir" Directory_Parent="winx86_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_Dir" Directory_Parent="winarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="optimization_guide_hint_cache_s_Dir" Directory_Parent="Default_Dir" DefaultDir="OPTIMI~1|optimization_guide_hint_cache_store" DirectoryOptions="3"/>
+    <ROW Directory="parcel_tracking_db_Dir" Directory_Parent="Default_Dir" DefaultDir="PARCEL~1|parcel_tracking_db" DirectoryOptions="3"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="APPDIR" DefaultDir="runtimes" DirectoryOptions="3"/>
+    <ROW Directory="shared_proto_db_Dir" Directory_Parent="Default_Dir" DefaultDir="SHARED~2|shared_proto_db" DirectoryOptions="3"/>
+    <ROW Directory="wasm_Dir" Directory_Parent="CodeCache_Dir" DefaultDir="wasm" DirectoryOptions="3"/>
+    <ROW Directory="winarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="WIN-AR~1|win-arm64" DirectoryOptions="3"/>
+    <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64" DirectoryOptions="3"/>
+    <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{2BB24E5C-1D6B-4733-828E-A471D7EF5F13}"/>
+    <ROW Component="ProductInformation" Value="{46B5B1A2-6090-4C5E-BE9B-344C60497A75}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{2BB24E5C-1D6B-4733-828E-A471D7EF5F13}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="BookmarkMergedSurfaceOrdering" ComponentId="{7273CDB6-485E-48E3-AF4A-87B5F693692D}" Directory_="Default_Dir" Attributes="0" KeyPath="BookmarkMergedSurfaceOrdering" Type="0"/>
+    <ROW Component="Cookies" ComponentId="{BBCD3AA0-1A6B-48B3-B581-7E4BC5BA91D0}" Directory_="Network_Dir" Attributes="0" KeyPath="Cookies" Type="0"/>
+    <ROW Component="EdgeEDropSQLite.db" ComponentId="{D129C027-7C74-4FF5-BE1C-0EE8439ED80F}" Directory_="EdgeEDrop_Dir" Attributes="0" KeyPath="EdgeEDropSQLite.db" Type="0"/>
+    <ROW Component="JWT.dll" ComponentId="{EA5DC67F-47A4-4488-AEEC-4D2633FAE746}" Directory_="Kreten_Dir" Attributes="0" KeyPath="JWT.dll"/>
+    <ROW Component="LOCK" ComponentId="{BC1E7612-D7BD-45AD-9BFB-F58A80A36E1B}" Directory_="AutofillAiModelCache_Dir" Attributes="0" KeyPath="LOCK" Type="0"/>
+    <ROW Component="LOCK_1" ComponentId="{63D31523-7129-4685-81BB-043DBC21DB27}" Directory_="AutofillStrikeDatabase_Dir" Attributes="0" KeyPath="LOCK_1" Type="0"/>
+    <ROW Component="LOCK_10" ComponentId="{E9AFC760-A1CA-4A57-B8B4-77FA432C78BE}" Directory_="optimization_guide_hint_cache_s_Dir" Attributes="0" KeyPath="LOCK_15" Type="0"/>
+    <ROW Component="LOCK_11" ComponentId="{C60E4722-58F6-414A-AD43-17B4BBBFC16F}" Directory_="parcel_tracking_db_Dir" Attributes="0" KeyPath="LOCK_16" Type="0"/>
+    <ROW Component="LOCK_12" ComponentId="{D92BCAF8-2647-4DFF-9D1E-BDA93BB7E3F7}" Directory_="PersistentOriginTrials_Dir" Attributes="0" KeyPath="LOCK_17" Type="0"/>
+    <ROW Component="LOCK_2" ComponentId="{BD12CDE7-2080-49AE-9914-9338F5E6DC37}" Directory_="BudgetDatabase_Dir" Attributes="0" KeyPath="LOCK_2" Type="0"/>
+    <ROW Component="LOCK_3" ComponentId="{0C47400A-B493-4EFE-A5FF-583966F031CE}" Directory_="ClientCertificates_Dir" Attributes="0" KeyPath="LOCK_3" Type="0"/>
+    <ROW Component="LOCK_4" ComponentId="{A2EC2457-2A34-44BB-8A6B-9B08C3D77809}" Directory_="commerce_subscription_db_Dir" Attributes="0" KeyPath="LOCK_4" Type="0"/>
+    <ROW Component="LOCK_5" ComponentId="{B3E1ADA8-ADB0-48B0-9BBC-4A7CA1E9A73B}" Directory_="discounts_db_Dir" Attributes="0" KeyPath="LOCK_5" Type="0"/>
+    <ROW Component="LOCK_6" ComponentId="{754E1FB9-641D-4B58-AFBC-16BDC4BC0881}" Directory_="discount_infos_db_Dir" Attributes="0" KeyPath="LOCK_6" Type="0"/>
+    <ROW Component="LOCK_7" ComponentId="{8125BF77-FF86-4309-BA89-7EDFF04DDA4C}" Directory_="EntryDB_Dir" Attributes="0" KeyPath="LOCK_7" Type="0"/>
+    <ROW Component="LOCK_8" ComponentId="{2EA90995-F07A-45EC-8E50-ACABB3C49230}" Directory_="AvailabilityDB_Dir" Attributes="0" KeyPath="LOCK_11" Type="0"/>
+    <ROW Component="LOCK_9" ComponentId="{F2B6149C-EFD3-4EF6-80E1-8669892FA860}" Directory_="EventDB_Dir" Attributes="0" KeyPath="LOCK_12" Type="0"/>
+    <ROW Component="LastVersion" ComponentId="{FC74DFB6-9C0C-4FFB-BF94-990E6DC4533A}" Directory_="EBWebView_Dir" Attributes="0" KeyPath="LastVersion" Type="0"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{25E2E091-B896-49DF-A390-44B4D5A61E42}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{4FA3F58B-CE3A-444E-92F6-22843FF9FCBF}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Component="Microsoft.IdentityModel.Abstractions.dll" ComponentId="{6B6F549E-2AE6-45B1-94B4-14052ED8072B}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Abstractions.dll"/>
+    <ROW Component="Microsoft.IdentityModel.JsonWebTokens.dll" ComponentId="{1A1BCDF1-A3C9-47C9-BC0B-0AEE137A8D91}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.JsonWebTokens.dll"/>
+    <ROW Component="Microsoft.IdentityModel.Logging.dll" ComponentId="{1234BDFC-74CC-4980-9A36-C6833F6D1B45}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Logging.dll"/>
+    <ROW Component="Microsoft.IdentityModel.Tokens.dll" ComponentId="{DD70ACFE-7116-4D15-B160-839349B9C8A3}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.IdentityModel.Tokens.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{3A8477FA-DD36-4473-A483-F2ECD42A0E54}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.WinForms.dll" ComponentId="{6448741E-A6B2-4763-80DA-E199BD7A7C18}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.WinForms.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Wpf.dll" ComponentId="{DF535AA4-92F1-45AD-9745-A1672E3A455E}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Wpf.dll"/>
+    <ROW Component="NetworkDataMigrated" ComponentId="{2F0D5419-B96E-46FB-8CF4-6E36ADDC9DC8}" Directory_="SafeBrowsingNetwork_Dir" Attributes="0" KeyPath="NetworkDataMigrated_1" Type="0"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{3E98D3DC-649B-4492-B15A-D2A4168E0B08}" Directory_="Kreten_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{46B5B1A2-6090-4C5E-BE9B-344C60497A75}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{00E1F40B-4EF5-4966-A415-C1CC0EFFD3CA}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.IdentityModel.Tokens.Jwt.dll" ComponentId="{2563BC98-688C-4C33-A169-B01C6E59C2EB}" Directory_="Kreten_Dir" Attributes="0" KeyPath="System.IdentityModel.Tokens.Jwt.dll"/>
+    <ROW Component="WebView2Loader.dll" ComponentId="{5BB59D1B-E9BB-4256-AB47-E9A6610665C1}" Directory_="native_Dir" Attributes="256" KeyPath="WebView2Loader.dll"/>
+    <ROW Component="WebView2Loader.dll_1" ComponentId="{61F733D4-332F-4411-8E5A-6054289C91AE}" Directory_="native_1_Dir" Attributes="256" KeyPath="WebView2Loader.dll_1"/>
+    <ROW Component="WebView2Loader.dll_2" ComponentId="{4CE0BD2B-0D04-46E7-925F-976AC95986EA}" Directory_="native_2_Dir" Attributes="0" KeyPath="WebView2Loader.dll_2"/>
+    <ROW Component="a42db87fc16e_0" ComponentId="{6B7FFB26-F19E-475E-BD32-261995C13C25}" Directory_="js_Dir" Attributes="0" KeyPath="a42db87fc16e_0" Type="0"/>
+    <ROW Component="customSettings" ComponentId="{F404E6CA-B9F7-4B68-9E7A-C76A8E6AA0DF}" Directory_="RemoteData_Dir" Attributes="0" KeyPath="customSettings" Type="0"/>
+    <ROW Component="data_0" ComponentId="{07346F71-B6AD-4369-BF6F-FD538A55F8B5}" Directory_="Cache_Data_Dir" Attributes="0" KeyPath="data_0" Type="0"/>
+    <ROW Component="data_0_1" ComponentId="{FF22F983-35D8-4B64-82FE-485DBFA8A073}" Directory_="DawnGraphiteCache_Dir" Attributes="0" KeyPath="data_0_1" Type="0"/>
+    <ROW Component="data_0_2" ComponentId="{EAA1A970-3696-446B-AD2E-F5D0A805824F}" Directory_="DawnWebGPUCache_Dir" Attributes="0" KeyPath="data_0_2" Type="0"/>
+    <ROW Component="data_0_3" ComponentId="{A2EBE58C-4D29-4DEC-8E76-C6D213E0B12B}" Directory_="GPUCache_Dir" Attributes="0" KeyPath="data_0_3" Type="0"/>
+    <ROW Component="data_0_4" ComponentId="{FBCFFDB9-77AB-470F-AC14-647D33003EC4}" Directory_="GraphiteDawnCache_Dir" Attributes="0" KeyPath="data_0_4" Type="0"/>
+    <ROW Component="data_0_5" ComponentId="{519CB022-1A8C-4563-B8D3-6DC5267DC757}" Directory_="GrShaderCache_Dir" Attributes="0" KeyPath="data_0_5" Type="0"/>
+    <ROW Component="data_0_6" ComponentId="{15193FBD-6092-4357-961D-9B66F54853BD}" Directory_="ShaderCache_Dir" Attributes="0" KeyPath="data_0_6" Type="0"/>
+    <ROW Component="db" ComponentId="{7EEA6576-E2BF-4815-9A90-6E421C9FED77}" Directory_="SharedDictionary_Dir" Attributes="0" KeyPath="db" Type="0"/>
+    <ROW Component="downloadCache" ComponentId="{E51EE8BA-CA22-4399-8572-70519C7491F8}" Directory_="local_Dir" Attributes="0" KeyPath="downloadCache" Type="0"/>
+    <ROW Component="index" ComponentId="{93F1045A-474C-4C2D-9EA8-BC14BB32260D}" Directory_="wasm_Dir" Attributes="0" KeyPath="index_2" Type="0"/>
+    <ROW Component="index_1" ComponentId="{FE5C138D-355F-43AF-96D5-B17B4DC8B9EB}" Directory_="cache_Dir" Attributes="0" KeyPath="index_6" Type="0"/>
+    <ROW Component="kretenKreta.deps.json" ComponentId="{CC967455-4F60-42C8-B008-201C7816BA40}" Directory_="Kreten_Dir" Attributes="0" KeyPath="kretenKreta.deps.json" Type="0"/>
+    <ROW Component="kretenKreta.dll" ComponentId="{E39EBD41-03A5-46A6-A354-92BA541313DD}" Directory_="Kreten_Dir" Attributes="256" KeyPath="kretenKreta.dll"/>
+    <ROW Component="kretenKreta.exe_1" ComponentId="{7C3B853F-2758-4781-87A0-9027A35D6D92}" Directory_="Kreten_Dir" Attributes="256" KeyPath="kretenKreta.exe"/>
+    <ROW Component="log" ComponentId="{4BB0C82C-3019-41F4-A144-D5E483DC0165}" Directory_="ExtensionRules_Dir" Attributes="0" KeyPath="log_8" Type="0"/>
+    <ROW Component="log_1" ComponentId="{FB58FFB0-4AD0-483D-A11D-F52552034A6D}" Directory_="ExtensionScripts_Dir" Attributes="0" KeyPath="log_10" Type="0"/>
+    <ROW Component="log_2" ComponentId="{7E7086C0-48EE-4A3F-AE70-3A6DB451057F}" Directory_="ExtensionState_Dir" Attributes="0" KeyPath="log_12" Type="0"/>
+    <ROW Component="log_3" ComponentId="{45BC9418-9242-49F5-B29B-C5A23BCE2A22}" Directory_="leveldb_Dir" Attributes="0" KeyPath="log_16" Type="0"/>
+    <ROW Component="log_4" ComponentId="{8CE230F0-FC8D-43A5-9F66-29215E3972B2}" Directory_="SessionStorage_Dir" Attributes="0" KeyPath="log_22" Type="0"/>
+    <ROW Component="log_5" ComponentId="{8D9D0147-12AC-4292-843C-A3BCBA80A6BE}" Directory_="shared_proto_db_Dir" Attributes="0" KeyPath="log_24" Type="0"/>
+    <ROW Component="log_6" ComponentId="{20D14EDB-9C3C-43CE-B5A3-9DCBD8E8CC58}" Directory_="metadata_Dir" Attributes="0" KeyPath="log_26" Type="0"/>
+    <ROW Component="log_7" ComponentId="{01E471F5-C11D-4F53-B85E-933A04489C20}" Directory_="SiteCharacteristicsDatabase_Dir" Attributes="0" KeyPath="log_28" Type="0"/>
+    <ROW Component="log_8" ComponentId="{17AE9923-BF7C-46B3-8772-E68ADAE62156}" Directory_="LevelDB_Dir" Attributes="0" KeyPath="log_30" Type="0"/>
+    <ROW Component="metadata" ComponentId="{84406F69-8F93-42BC-A891-BBC1668D8D3B}" Directory_="Crashpad_Dir" Attributes="0" KeyPath="metadata" Type="0"/>
+    <ROW Component="metadata.json" ComponentId="{87C0C1A7-8EE1-4C85-985A-DEFE5BE392D5}" Directory_="component_crx_cache_Dir" Attributes="0" KeyPath="metadata.json" Type="0"/>
+    <ROW Component="metadata.json_1" ComponentId="{CFD798A8-2352-4D72-BC6D-CD627084BEA8}" Directory_="extensions_crx_cache_Dir" Attributes="0" KeyPath="metadata.json_1" Type="0"/>
+    <ROW Component="therealindex" ComponentId="{45929D22-BA47-4EF2-A406-F4C635172C9F}" Directory_="indexdir_Dir" Attributes="0" KeyPath="therealindex" Type="0"/>
+    <ROW Component="therealindex_1" ComponentId="{BE62D722-0743-4393-AE02-7EC4D0ACE71A}" Directory_="indexdir_1_Dir" Attributes="0" KeyPath="therealindex_1" Type="0"/>
+    <ROW Component="therealindex_2" ComponentId="{DADA57F1-132E-48C8-9070-E00D17C4CE08}" Directory_="indexdir_2_Dir" Attributes="0" KeyPath="therealindex_2" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Microsoft.Extensions.Logging.Abstractions.dll" Component_="Microsoft.Extensions.Logging.Abstractions.dll" FileName="MICROS~2.DLL|Microsoft.Extensions.Logging.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Abstractions.dll" Component_="Microsoft.IdentityModel.Abstractions.dll" FileName="MICROS~3.DLL|Microsoft.IdentityModel.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.JsonWebTokens.dll" Component_="Microsoft.IdentityModel.JsonWebTokens.dll" FileName="MICROS~4.DLL|Microsoft.IdentityModel.JsonWebTokens.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Logging.dll" Component_="Microsoft.IdentityModel.Logging.dll" FileName="MICROS~5.DLL|Microsoft.IdentityModel.Logging.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.IdentityModel.Logging.dll" SelfReg="false"/>
+    <ROW File="Microsoft.IdentityModel.Tokens.dll" Component_="Microsoft.IdentityModel.Tokens.dll" FileName="MICROS~6.DLL|Microsoft.IdentityModel.Tokens.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.IdentityModel.Tokens.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.dll" Component_="Microsoft.Web.WebView2.Core.dll" FileName="MICROS~7.DLL|Microsoft.Web.WebView2.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.xml" Component_="kretenKreta.deps.json" FileName="MICROS~1.XML|Microsoft.Web.WebView2.Core.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Core.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.dll" Component_="Microsoft.Web.WebView2.WinForms.dll" FileName="MICROS~8.DLL|Microsoft.Web.WebView2.WinForms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.xml" Component_="kretenKreta.deps.json" FileName="MICROS~2.XML|Microsoft.Web.WebView2.WinForms.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.WinForms.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.dll" Component_="Microsoft.Web.WebView2.Wpf.dll" FileName="MICROS~9.DLL|Microsoft.Web.WebView2.Wpf.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.xml" Component_="kretenKreta.deps.json" FileName="MICROS~3.XML|Microsoft.Web.WebView2.Wpf.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Web.WebView2.Wpf.xml" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="System.IdentityModel.Tokens.Jwt.dll" Component_="System.IdentityModel.Tokens.Jwt.dll" FileName="SYSTEM~1.DLL|System.IdentityModel.Tokens.Jwt.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll" SelfReg="false"/>
+    <ROW File="metadata.json" Component_="metadata.json" FileName="METADA~1.JSO|metadata.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\component_crx_cache\metadata.json" SelfReg="false"/>
+    <ROW File="metadata" Component_="metadata" FileName="metadata" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Crashpad\metadata" SelfReg="false"/>
+    <ROW File="settings.dat" Component_="metadata" FileName="settings.dat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Crashpad\settings.dat" SelfReg="false"/>
+    <ROW File="throttle_store.dat" Component_="metadata" FileName="THROTT~1.DAT|throttle_store.dat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Crashpad\throttle_store.dat" SelfReg="false"/>
+    <ROW File="LOCK" Component_="LOCK" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\AutofillAiModelCache\LOCK" SelfReg="false"/>
+    <ROW File="LOG" Component_="LOCK" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\AutofillAiModelCache\LOG" SelfReg="false"/>
+    <ROW File="LOCK_1" Component_="LOCK_1" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase\LOCK" SelfReg="false"/>
+    <ROW File="LOG_1" Component_="LOCK_1" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\AutofillStrikeDatabase\LOG" SelfReg="false"/>
+    <ROW File="BookmarkMergedSurfaceOrdering" Component_="BookmarkMergedSurfaceOrdering" FileName="BOOKMA~1|BookmarkMergedSurfaceOrdering" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BookmarkMergedSurfaceOrdering" SelfReg="false"/>
+    <ROW File="BrowsingTopicsSiteData" Component_="BookmarkMergedSurfaceOrdering" FileName="BROWSI~1|BrowsingTopicsSiteData" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BrowsingTopicsSiteData" SelfReg="false"/>
+    <ROW File="BrowsingTopicsSiteDatajournal" Component_="BookmarkMergedSurfaceOrdering" FileName="BROWSI~2|BrowsingTopicsSiteData-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BrowsingTopicsSiteData-journal" SelfReg="false"/>
+    <ROW File="BrowsingTopicsState" Component_="BookmarkMergedSurfaceOrdering" FileName="BROWSI~3|BrowsingTopicsState" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BrowsingTopicsState" SelfReg="false"/>
+    <ROW File="LOCK_2" Component_="LOCK_2" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BudgetDatabase\LOCK" SelfReg="false"/>
+    <ROW File="LOG_2" Component_="LOCK_2" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\BudgetDatabase\LOG" SelfReg="false"/>
+    <ROW File="data_0" Component_="data_0" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_0" SelfReg="false"/>
+    <ROW File="data_1" Component_="data_0" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_1" SelfReg="false"/>
+    <ROW File="data_2" Component_="data_0" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_2" SelfReg="false"/>
+    <ROW File="data_3" Component_="data_0" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\data_3" SelfReg="false"/>
+    <ROW File="f_000001" Component_="data_0" FileName="f_000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000001" SelfReg="false"/>
+    <ROW File="f_000002" Component_="data_0" FileName="f_000002" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000002" SelfReg="false"/>
+    <ROW File="f_000003" Component_="data_0" FileName="f_000003" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000003" SelfReg="false"/>
+    <ROW File="f_000004" Component_="data_0" FileName="f_000004" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000004" SelfReg="false"/>
+    <ROW File="f_000005" Component_="data_0" FileName="f_000005" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000005" SelfReg="false"/>
+    <ROW File="f_000006" Component_="data_0" FileName="f_000006" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000006" SelfReg="false"/>
+    <ROW File="f_000007" Component_="data_0" FileName="f_000007" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\f_000007" SelfReg="false"/>
+    <ROW File="index" Component_="data_0" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Cache\Cache_Data\index" SelfReg="false"/>
+    <ROW File="LOCK_3" Component_="LOCK_3" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ClientCertificates\LOCK" SelfReg="false"/>
+    <ROW File="LOG_3" Component_="LOCK_3" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ClientCertificates\LOG" SelfReg="false"/>
+    <ROW File="a42db87fc16e_0" Component_="a42db87fc16e_0" FileName="3548A4~1|3548a42db87fc16e_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\3548a42db87fc16e_0" SelfReg="false"/>
+    <ROW File="fef7c7592929_0" Component_="a42db87fc16e_0" FileName="4656FE~1|4656fef7c7592929_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\4656fef7c7592929_0" SelfReg="false"/>
+    <ROW File="dbee1e360aa734_0" Component_="a42db87fc16e_0" FileName="47DBEE~1|47dbee1e360aa734_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\47dbee1e360aa734_0" SelfReg="false"/>
+    <ROW File="f97c3e1955f2146_0" Component_="a42db87fc16e_0" FileName="5F97C3~1|5f97c3e1955f2146_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\5f97c3e1955f2146_0" SelfReg="false"/>
+    <ROW File="a66d9af031d2b_0" Component_="a42db87fc16e_0" FileName="618A66~1|618a66d9af031d2b_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\618a66d9af031d2b_0" SelfReg="false"/>
+    <ROW File="a0066de42f8a5272_0" Component_="a42db87fc16e_0" FileName="A0066D~1|a0066de42f8a5272_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\a0066de42f8a5272_0" SelfReg="false"/>
+    <ROW File="b1ce5b5fdf0744b3_0" Component_="a42db87fc16e_0" FileName="B1CE5B~1|b1ce5b5fdf0744b3_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\b1ce5b5fdf0744b3_0" SelfReg="false"/>
+    <ROW File="d9d37e754cd5a509_0" Component_="a42db87fc16e_0" FileName="D9D37E~1|d9d37e754cd5a509_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\d9d37e754cd5a509_0" SelfReg="false"/>
+    <ROW File="db60575c7f31b77a_0" Component_="a42db87fc16e_0" FileName="DB6057~1|db60575c7f31b77a_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\db60575c7f31b77a_0" SelfReg="false"/>
+    <ROW File="f7d7b35793f51fb6_0" Component_="a42db87fc16e_0" FileName="F7D7B3~1|f7d7b35793f51fb6_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\f7d7b35793f51fb6_0" SelfReg="false"/>
+    <ROW File="index_1" Component_="a42db87fc16e_0" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\index" SelfReg="false"/>
+    <ROW File="therealindex" Component_="therealindex" FileName="THE-RE~1|the-real-index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\js\index-dir\the-real-index" SelfReg="false"/>
+    <ROW File="index_2" Component_="index" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\wasm\index" SelfReg="false"/>
+    <ROW File="therealindex_1" Component_="therealindex_1" FileName="THE-RE~1|the-real-index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Code Cache\wasm\index-dir\the-real-index" SelfReg="false"/>
+    <ROW File="LOCK_4" Component_="LOCK_4" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\commerce_subscription_db\LOCK" SelfReg="false"/>
+    <ROW File="LOG_4" Component_="LOCK_4" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\commerce_subscription_db\LOG" SelfReg="false"/>
+    <ROW File="data_0_1" Component_="data_0_1" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnGraphiteCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_1" Component_="data_0_1" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnGraphiteCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_1" Component_="data_0_1" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnGraphiteCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_1" Component_="data_0_1" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnGraphiteCache\data_3" SelfReg="false"/>
+    <ROW File="index_3" Component_="data_0_1" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnGraphiteCache\index" SelfReg="false"/>
+    <ROW File="data_0_2" Component_="data_0_2" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnWebGPUCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_2" Component_="data_0_2" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnWebGPUCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_2" Component_="data_0_2" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnWebGPUCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_2" Component_="data_0_2" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnWebGPUCache\data_3" SelfReg="false"/>
+    <ROW File="index_4" Component_="data_0_2" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DawnWebGPUCache\index" SelfReg="false"/>
+    <ROW File="DIPS" Component_="BookmarkMergedSurfaceOrdering" FileName="DIPS" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\DIPS" SelfReg="false"/>
+    <ROW File="LOCK_5" Component_="LOCK_5" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\discounts_db\LOCK" SelfReg="false"/>
+    <ROW File="LOG_5" Component_="LOCK_5" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\discounts_db\LOG" SelfReg="false"/>
+    <ROW File="LOCK_6" Component_="LOCK_6" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\discount_infos_db\LOCK" SelfReg="false"/>
+    <ROW File="LOG_6" Component_="LOCK_6" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\discount_infos_db\LOG" SelfReg="false"/>
+    <ROW File="LOCK_7" Component_="LOCK_7" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Download Service\EntryDB\LOCK" SelfReg="false"/>
+    <ROW File="LOG_7" Component_="LOCK_7" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Download Service\EntryDB\LOG" SelfReg="false"/>
+    <ROW File="EdgeEDropSQLite.db" Component_="EdgeEDropSQLite.db" FileName="EDGEED~1.DB|EdgeEDropSQLite.db" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\EdgeEDrop\EdgeEDropSQLite.db" SelfReg="false"/>
+    <ROW File="EdgeEDropSQLite.dbjournal" Component_="EdgeEDropSQLite.db" FileName="EDGEED~1.DB-|EdgeEDropSQLite.db-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\EdgeEDrop\EdgeEDropSQLite.db-journal" SelfReg="false"/>
+    <ROW File="log_8" Component_="log" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Rules\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT" Component_="log" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Rules\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_8" Component_="log" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Rules\LOCK" SelfReg="false"/>
+    <ROW File="LOG_9" Component_="log" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Rules\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001" Component_="log" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Rules\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="log_10" Component_="log_1" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Scripts\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_1" Component_="log_1" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Scripts\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_9" Component_="log_1" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Scripts\LOCK" SelfReg="false"/>
+    <ROW File="LOG_11" Component_="log_1" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Scripts\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_1" Component_="log_1" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension Scripts\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="log_12" Component_="log_2" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension State\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_2" Component_="log_2" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension State\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_10" Component_="log_2" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension State\LOCK" SelfReg="false"/>
+    <ROW File="LOG_13" Component_="log_2" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension State\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_2" Component_="log_2" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Extension State\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="ExtensionActivityComp" Component_="BookmarkMergedSurfaceOrdering" FileName="EXTENS~1|ExtensionActivityComp" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ExtensionActivityComp" SelfReg="false"/>
+    <ROW File="ExtensionActivityEdge" Component_="BookmarkMergedSurfaceOrdering" FileName="EXTENS~2|ExtensionActivityEdge" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ExtensionActivityEdge" SelfReg="false"/>
+    <ROW File="ExtensionActivityEdgejournal" Component_="BookmarkMergedSurfaceOrdering" FileName="EXTENS~3|ExtensionActivityEdge-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ExtensionActivityEdge-journal" SelfReg="false"/>
+    <ROW File="Favicons" Component_="BookmarkMergedSurfaceOrdering" FileName="Favicons" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Favicons" SelfReg="false"/>
+    <ROW File="Faviconsjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="FAVICO~1|Favicons-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Favicons-journal" SelfReg="false"/>
+    <ROW File="favorites_diagnostic.log" Component_="BookmarkMergedSurfaceOrdering" FileName="FAVORI~1.LOG|favorites_diagnostic.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\favorites_diagnostic.log" SelfReg="false"/>
+    <ROW File="LOCK_11" Component_="LOCK_8" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\AvailabilityDB\LOCK" SelfReg="false"/>
+    <ROW File="LOG_14" Component_="LOCK_8" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\AvailabilityDB\LOG" SelfReg="false"/>
+    <ROW File="LOCK_12" Component_="LOCK_9" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\EventDB\LOCK" SelfReg="false"/>
+    <ROW File="LOG_15" Component_="LOCK_9" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Feature Engagement Tracker\EventDB\LOG" SelfReg="false"/>
+    <ROW File="data_0_3" Component_="data_0_3" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\GPUCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_3" Component_="data_0_3" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\GPUCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_3" Component_="data_0_3" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\GPUCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_3" Component_="data_0_3" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\GPUCache\data_3" SelfReg="false"/>
+    <ROW File="index_5" Component_="data_0_3" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\GPUCache\index" SelfReg="false"/>
+    <ROW File="heavy_ad_intervention_opt_out.db" Component_="BookmarkMergedSurfaceOrdering" FileName="HEAVY_~1.DB|heavy_ad_intervention_opt_out.db" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db" SelfReg="false"/>
+    <ROW File="heavy_ad_intervention_opt_out.dbjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="HEAVY_~1.DB-|heavy_ad_intervention_opt_out.db-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\heavy_ad_intervention_opt_out.db-journal" SelfReg="false"/>
+    <ROW File="History" Component_="BookmarkMergedSurfaceOrdering" FileName="History" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\History" SelfReg="false"/>
+    <ROW File="Historyjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="HISTOR~1|History-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\History-journal" SelfReg="false"/>
+    <ROW File="log_16" Component_="log_3" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Local Storage\leveldb\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_3" Component_="log_3" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Local Storage\leveldb\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_13" Component_="log_3" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Local Storage\leveldb\LOCK" SelfReg="false"/>
+    <ROW File="LOG_17" Component_="log_3" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Local Storage\leveldb\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_3" Component_="log_3" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Local Storage\leveldb\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="LOCK_14" Component_="BookmarkMergedSurfaceOrdering" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\LOCK" SelfReg="false"/>
+    <ROW File="LOG_18" Component_="BookmarkMergedSurfaceOrdering" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\LOG" SelfReg="false"/>
+    <ROW File="LoginData" Component_="BookmarkMergedSurfaceOrdering" FileName="LOGIND~1|Login Data" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Login Data" SelfReg="false"/>
+    <ROW File="LoginDataForAccount" Component_="BookmarkMergedSurfaceOrdering" FileName="LOGIND~2|Login Data For Account" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Login Data For Account" SelfReg="false"/>
+    <ROW File="LoginDataForAccountjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="LOGIND~3|Login Data For Account-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Login Data For Account-journal" SelfReg="false"/>
+    <ROW File="LoginDatajournal" Component_="BookmarkMergedSurfaceOrdering" FileName="LOGIND~4|Login Data-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Login Data-journal" SelfReg="false"/>
+    <ROW File="Cookies" Component_="Cookies" FileName="Cookies" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Cookies" SelfReg="false"/>
+    <ROW File="Cookiesjournal" Component_="Cookies" FileName="COOKIE~1|Cookies-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Cookies-journal" SelfReg="false"/>
+    <ROW File="NetworkPersistentState" Component_="Cookies" FileName="NETWOR~1|Network Persistent State" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Network Persistent State" SelfReg="false"/>
+    <ROW File="NetworkDataMigrated" Component_="Cookies" FileName="NETWOR~2|NetworkDataMigrated" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\NetworkDataMigrated" SelfReg="false"/>
+    <ROW File="ReportingandNEL" Component_="Cookies" FileName="REPORT~1|Reporting and NEL" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Reporting and NEL" SelfReg="false"/>
+    <ROW File="ReportingandNELjournal" Component_="Cookies" FileName="REPORT~2|Reporting and NEL-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Reporting and NEL-journal" SelfReg="false"/>
+    <ROW File="SCTAuditingPendingReports" Component_="Cookies" FileName="SCTAUD~1|SCT Auditing Pending Reports" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\SCT Auditing Pending Reports" SelfReg="false"/>
+    <ROW File="SdchDictionaries" Component_="Cookies" FileName="SDCHDI~1|Sdch Dictionaries" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Sdch Dictionaries" SelfReg="false"/>
+    <ROW File="TransportSecurity" Component_="Cookies" FileName="TRANSP~1|TransportSecurity" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\TransportSecurity" SelfReg="false"/>
+    <ROW File="TrustTokens" Component_="Cookies" FileName="TRUSTT~1|Trust Tokens" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Trust Tokens" SelfReg="false"/>
+    <ROW File="TrustTokensjournal" Component_="Cookies" FileName="TRUSTT~2|Trust Tokens-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network\Trust Tokens-journal" SelfReg="false"/>
+    <ROW File="NetworkActionPredictor" Component_="BookmarkMergedSurfaceOrdering" FileName="NETWOR~1|Network Action Predictor" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network Action Predictor" SelfReg="false"/>
+    <ROW File="NetworkActionPredictorjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="NETWOR~2|Network Action Predictor-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Network Action Predictor-journal" SelfReg="false"/>
+    <ROW File="LOCK_15" Component_="LOCK_10" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\LOCK" SelfReg="false"/>
+    <ROW File="LOG_19" Component_="LOCK_10" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\optimization_guide_hint_cache_store\LOG" SelfReg="false"/>
+    <ROW File="LOCK_16" Component_="LOCK_11" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\parcel_tracking_db\LOCK" SelfReg="false"/>
+    <ROW File="LOG_20" Component_="LOCK_11" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\parcel_tracking_db\LOG" SelfReg="false"/>
+    <ROW File="LOCK_17" Component_="LOCK_12" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\PersistentOriginTrials\LOCK" SelfReg="false"/>
+    <ROW File="LOG_21" Component_="LOCK_12" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\PersistentOriginTrials\LOG" SelfReg="false"/>
+    <ROW File="Preferences" Component_="BookmarkMergedSurfaceOrdering" FileName="PREFER~1|Preferences" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Preferences" SelfReg="false"/>
+    <ROW File="PreferredApps" Component_="BookmarkMergedSurfaceOrdering" FileName="PREFER~2|PreferredApps" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\PreferredApps" SelfReg="false"/>
+    <ROW File="README" Component_="BookmarkMergedSurfaceOrdering" FileName="README" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\README" SelfReg="false"/>
+    <ROW File="NetworkDataMigrated_1" Component_="NetworkDataMigrated" FileName="NETWOR~1|NetworkDataMigrated" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Safe Browsing Network\NetworkDataMigrated" SelfReg="false"/>
+    <ROW File="SafeBrowsingCookies" Component_="NetworkDataMigrated" FileName="SAFEBR~1|Safe Browsing Cookies" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Safe Browsing Network\Safe Browsing Cookies" SelfReg="false"/>
+    <ROW File="SafeBrowsingCookiesjournal" Component_="NetworkDataMigrated" FileName="SAFEBR~2|Safe Browsing Cookies-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Safe Browsing Network\Safe Browsing Cookies-journal" SelfReg="false"/>
+    <ROW File="SecurePreferences" Component_="BookmarkMergedSurfaceOrdering" FileName="SECURE~1|Secure Preferences" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Secure Preferences" SelfReg="false"/>
+    <ROW File="ServerCertificate" Component_="BookmarkMergedSurfaceOrdering" FileName="SERVER~1|ServerCertificate" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ServerCertificate" SelfReg="false"/>
+    <ROW File="ServerCertificatejournal" Component_="BookmarkMergedSurfaceOrdering" FileName="SERVER~2|ServerCertificate-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\ServerCertificate-journal" SelfReg="false"/>
+    <ROW File="log_22" Component_="log_4" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Session Storage\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_4" Component_="log_4" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Session Storage\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_18" Component_="log_4" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Session Storage\LOCK" SelfReg="false"/>
+    <ROW File="LOG_23" Component_="log_4" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Session Storage\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_4" Component_="log_4" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Session Storage\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="index_6" Component_="index_1" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Shared Dictionary\cache\index" SelfReg="false"/>
+    <ROW File="therealindex_2" Component_="therealindex_2" FileName="THE-RE~1|the-real-index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Shared Dictionary\cache\index-dir\the-real-index" SelfReg="false"/>
+    <ROW File="db" Component_="db" FileName="db" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Shared Dictionary\db" SelfReg="false"/>
+    <ROW File="dbjournal" Component_="db" FileName="DB-JOU~1|db-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Shared Dictionary\db-journal" SelfReg="false"/>
+    <ROW File="SharedStorage" Component_="BookmarkMergedSurfaceOrdering" FileName="SHARED~1|SharedStorage" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\SharedStorage" SelfReg="false"/>
+    <ROW File="log_24" Component_="log_5" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_5" Component_="log_5" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_19" Component_="log_5" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\LOCK" SelfReg="false"/>
+    <ROW File="LOG_25" Component_="log_5" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_5" Component_="log_5" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="log_26" Component_="log_6" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_6" Component_="log_6" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_20" Component_="log_6" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\LOCK" SelfReg="false"/>
+    <ROW File="LOG_27" Component_="log_6" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_6" Component_="log_6" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\shared_proto_db\metadata\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="log_28" Component_="log_7" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Site Characteristics Database\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_7" Component_="log_7" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Site Characteristics Database\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_21" Component_="log_7" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Site Characteristics Database\LOCK" SelfReg="false"/>
+    <ROW File="LOG_29" Component_="log_7" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Site Characteristics Database\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_7" Component_="log_7" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Site Characteristics Database\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="log_30" Component_="log_8" FileName="000003.log" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Sync Data\LevelDB\000003.log" SelfReg="false"/>
+    <ROW File="CURRENT_8" Component_="log_8" FileName="CURRENT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Sync Data\LevelDB\CURRENT" SelfReg="false"/>
+    <ROW File="LOCK_22" Component_="log_8" FileName="LOCK" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Sync Data\LevelDB\LOCK" SelfReg="false"/>
+    <ROW File="LOG_31" Component_="log_8" FileName="LOG" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Sync Data\LevelDB\LOG" SelfReg="false"/>
+    <ROW File="MANIFEST000001_8" Component_="log_8" FileName="MANIFE~1|MANIFEST-000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Sync Data\LevelDB\MANIFEST-000001" SelfReg="false"/>
+    <ROW File="TopSites" Component_="BookmarkMergedSurfaceOrdering" FileName="TOPSIT~1|Top Sites" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Top Sites" SelfReg="false"/>
+    <ROW File="TopSitesjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="TOPSIT~2|Top Sites-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Top Sites-journal" SelfReg="false"/>
+    <ROW File="VpnTokens" Component_="BookmarkMergedSurfaceOrdering" FileName="VPNTOK~1|Vpn Tokens" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Vpn Tokens" SelfReg="false"/>
+    <ROW File="VpnTokensjournal" Component_="BookmarkMergedSurfaceOrdering" FileName="VPNTOK~2|Vpn Tokens-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Vpn Tokens-journal" SelfReg="false"/>
+    <ROW File="WebData" Component_="BookmarkMergedSurfaceOrdering" FileName="WEBDAT~1|Web Data" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Web Data" SelfReg="false"/>
+    <ROW File="WebDatajournal" Component_="BookmarkMergedSurfaceOrdering" FileName="WEBDAT~2|Web Data-journal" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Default\Web Data-journal" SelfReg="false"/>
+    <ROW File="metadata.json_1" Component_="metadata.json_1" FileName="METADA~1.JSO|metadata.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\extensions_crx_cache\metadata.json" SelfReg="false"/>
+    <ROW File="data_0_4" Component_="data_0_4" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GraphiteDawnCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_4" Component_="data_0_4" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GraphiteDawnCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_4" Component_="data_0_4" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GraphiteDawnCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_4" Component_="data_0_4" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GraphiteDawnCache\data_3" SelfReg="false"/>
+    <ROW File="index_7" Component_="data_0_4" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GraphiteDawnCache\index" SelfReg="false"/>
+    <ROW File="data_0_5" Component_="data_0_5" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_5" Component_="data_0_5" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_5" Component_="data_0_5" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_5" Component_="data_0_5" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\data_3" SelfReg="false"/>
+    <ROW File="f_000001_1" Component_="data_0_5" FileName="f_000001" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\f_000001" SelfReg="false"/>
+    <ROW File="f_000002_1" Component_="data_0_5" FileName="f_000002" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\f_000002" SelfReg="false"/>
+    <ROW File="index_8" Component_="data_0_5" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\GrShaderCache\index" SelfReg="false"/>
+    <ROW File="LastVersion" Component_="LastVersion" FileName="LASTVE~1|Last Version" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Last Version" SelfReg="false"/>
+    <ROW File="LocalState" Component_="LastVersion" FileName="LOCALS~1|Local State" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Local State" SelfReg="false"/>
+    <ROW File="data_0_6" Component_="data_0_6" FileName="data_0" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\ShaderCache\data_0" SelfReg="false"/>
+    <ROW File="data_1_6" Component_="data_0_6" FileName="data_1" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\ShaderCache\data_1" SelfReg="false"/>
+    <ROW File="data_2_6" Component_="data_0_6" FileName="data_2" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\ShaderCache\data_2" SelfReg="false"/>
+    <ROW File="data_3_6" Component_="data_0_6" FileName="data_3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\ShaderCache\data_3" SelfReg="false"/>
+    <ROW File="index_9" Component_="data_0_6" FileName="index" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\ShaderCache\index" SelfReg="false"/>
+    <ROW File="downloadCache" Component_="downloadCache" FileName="DOWNLO~1|downloadCache" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\local\downloadCache" SelfReg="false"/>
+    <ROW File="downloadCache_" Component_="downloadCache" FileName="DOWNLO~2|downloadCache_" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\local\downloadCache_" SelfReg="false"/>
+    <ROW File="uriCache" Component_="downloadCache" FileName="uriCache" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\local\uriCache" SelfReg="false"/>
+    <ROW File="uriCache_" Component_="downloadCache" FileName="URICAC~1|uriCache_" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\local\uriCache_" SelfReg="false"/>
+    <ROW File="customSettings" Component_="customSettings" FileName="CUSTOM~1|customSettings" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\customSettings" SelfReg="false"/>
+    <ROW File="customSettings_F95BA787499AB4FA9EFFF472CE383A14" Component_="customSettings" FileName="CUSTOM~2|customSettings_F95BA787499AB4FA9EFFF472CE383A14" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\customSettings_F95BA787499AB4FA9EFFF472CE383A14" SelfReg="false"/>
+    <ROW File="edgeSettings" Component_="customSettings" FileName="EDGESE~1|edgeSettings" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\edgeSettings" SelfReg="false"/>
+    <ROW File="edgeSettings_2.0a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693b" Component_="customSettings" FileName="EDGESE~1.0-A|edgeSettings_2.0-a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693be7cd5353ad3" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\edgeSettings_2.0-a82cb2897a8bf9445d68dcc2be05af89ad4b2fda1fddb2952693be7cd5353ad3" SelfReg="false"/>
+    <ROW File="topTraffic" Component_="customSettings" FileName="TOPTRA~1|topTraffic" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\topTraffic" SelfReg="false"/>
+    <ROW File="topTraffic_638004170464094982" Component_="customSettings" FileName="TOPTRA~2|topTraffic_638004170464094982" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\SmartScreen\RemoteData\topTraffic_638004170464094982" SelfReg="false"/>
+    <ROW File="Variations" Component_="LastVersion" FileName="VARIAT~1|Variations" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe.WebView2\EBWebView\Variations" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll" Component_="WebView2Loader.dll" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_1" Component_="WebView2Loader.dll_1" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_2" Component_="WebView2Loader.dll_2" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="JWT.dll" Component_="JWT.dll" FileName="JWT.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\JWT.dll" SelfReg="false"/>
+    <ROW File="kretenKreta.deps.json" Component_="kretenKreta.deps.json" FileName="KRETEN~1.JSO|kretenKreta.deps.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.deps.json" SelfReg="false"/>
+    <ROW File="kretenKreta.dll" Component_="kretenKreta.dll" FileName="KRETEN~1.DLL|kretenKreta.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.dll" SelfReg="false"/>
+    <ROW File="kretenKreta.exe" Component_="kretenKreta.exe_1" FileName="KRETEN~1.EXE|kretenKreta.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="kretenKreta.pdb" Component_="kretenKreta.exe_1" FileName="KRETEN~1.PDB|kretenKreta.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.pdb" SelfReg="false"/>
+    <ROW File="kretenKreta.runtimeconfig.json" Component_="kretenKreta.deps.json" FileName="KRETEN~2.JSO|kretenKreta.runtimeconfig.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\kretenKreta.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll" FileName="MICROS~1.DLL|Microsoft.Extensions.DependencyInjection.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="kreten - kreta\bin\x64\Release\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="hu" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_hu.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.JsonWebTokens.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Logging.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.IdentityModel.Tokens.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.WinForms.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Wpf.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IdentityModel.Tokens.Jwt.dll"/>
+    <ROW Feature_="MainFeature" Component_="metadata.json"/>
+    <ROW Feature_="MainFeature" Component_="metadata"/>
+    <ROW Feature_="MainFeature" Component_="LOCK"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_1"/>
+    <ROW Feature_="MainFeature" Component_="BookmarkMergedSurfaceOrdering"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_2"/>
+    <ROW Feature_="MainFeature" Component_="data_0"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_3"/>
+    <ROW Feature_="MainFeature" Component_="a42db87fc16e_0"/>
+    <ROW Feature_="MainFeature" Component_="therealindex"/>
+    <ROW Feature_="MainFeature" Component_="index"/>
+    <ROW Feature_="MainFeature" Component_="therealindex_1"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_4"/>
+    <ROW Feature_="MainFeature" Component_="data_0_1"/>
+    <ROW Feature_="MainFeature" Component_="data_0_2"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_5"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_6"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_7"/>
+    <ROW Feature_="MainFeature" Component_="EdgeEDropSQLite.db"/>
+    <ROW Feature_="MainFeature" Component_="log"/>
+    <ROW Feature_="MainFeature" Component_="log_1"/>
+    <ROW Feature_="MainFeature" Component_="log_2"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_8"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_9"/>
+    <ROW Feature_="MainFeature" Component_="data_0_3"/>
+    <ROW Feature_="MainFeature" Component_="log_3"/>
+    <ROW Feature_="MainFeature" Component_="Cookies"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_10"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_11"/>
+    <ROW Feature_="MainFeature" Component_="LOCK_12"/>
+    <ROW Feature_="MainFeature" Component_="NetworkDataMigrated"/>
+    <ROW Feature_="MainFeature" Component_="log_4"/>
+    <ROW Feature_="MainFeature" Component_="index_1"/>
+    <ROW Feature_="MainFeature" Component_="therealindex_2"/>
+    <ROW Feature_="MainFeature" Component_="db"/>
+    <ROW Feature_="MainFeature" Component_="log_5"/>
+    <ROW Feature_="MainFeature" Component_="log_6"/>
+    <ROW Feature_="MainFeature" Component_="log_7"/>
+    <ROW Feature_="MainFeature" Component_="log_8"/>
+    <ROW Feature_="MainFeature" Component_="metadata.json_1"/>
+    <ROW Feature_="MainFeature" Component_="data_0_4"/>
+    <ROW Feature_="MainFeature" Component_="data_0_5"/>
+    <ROW Feature_="MainFeature" Component_="LastVersion"/>
+    <ROW Feature_="MainFeature" Component_="data_0_6"/>
+    <ROW Feature_="MainFeature" Component_="downloadCache"/>
+    <ROW Feature_="MainFeature" Component_="customSettings"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="JWT.dll"/>
+    <ROW Feature_="MainFeature" Component_="kretenKreta.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="kretenKreta.deps.json"/>
+    <ROW Feature_="MainFeature" Component_="kretenKreta.exe_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="kreten_logo.exe" SourcePath="kreten_logo.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] nem telepíthető a következő helyre [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] nem telepíthető a következő helyre [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] nem telepíthető a következő helyre [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] nem telepíthető a következő helyre [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] nem telepíthető a következő helyre [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Parancsikon_kretenKreta" Directory_="SHORTCUTDIR" Name="Kreten" Component_="kretenKreta.exe_1" Target="[#kretenKreta.exe]" Hotkey="0" Icon_="kreten_logo.exe" IconIndex="0" ShowCmd="1" WkDir="Kreten_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

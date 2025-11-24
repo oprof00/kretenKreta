@@ -1,0 +1,161 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <WebView2DispatchAdapterNamespace>kretenKreta</WebView2DispatchAdapterNamespace>
+    <WebView2LoaderPreference>Static</WebView2LoaderPreference>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>kretenKreta</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <StartupObject>kretenKreta.Program</StartupObject>
+    <PackageProjectUrl>https://github.com/oprof00/kreten</PackageProjectUrl>
+    <ApplicationIcon>kreten_logo.ico</ApplicationIcon>
+    <AssemblyTitle>kretenKreta</AssemblyTitle>
+    <SignAssembly>False</SignAssembly>
+    <PackageId>kretenKreta</PackageId>
+    <Authors>prof00</Authors>
+    <Company>prof00</Company>
+    <Product>kretenKreta</Product>
+    <Description>kretenKreta</Description>
+    <Copyright>prof00</Copyright>
+    <PackageIcon>kreten_logo.png</PackageIcon>
+    <AssemblyName>kretenKreta</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\142.0.3595.90.manifest" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\AdSelectionAttestationsPreloaded\ad-selection-attestations.dat" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\AdSelectionAttestationsPreloaded\manifest.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\concrt140.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\d3dcompiler_47.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\delegatedWebFeatures.sccd" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\dual_engine_adapter_x64.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\dxcompiler.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\dxil.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\EBWebView\x64\EmbeddedBrowserWebView.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\EBWebView\x86\EmbeddedBrowserWebView.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Edge.dat" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\EdgeWebView.dat" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\edge_feedback\camera_mf_trace.wprp" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\edge_feedback\mf_trace.wprp" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\elevated_tracing_service.exe" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\eventlog_provider.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Extensions\external_extensions.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\ffmpeg.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\icudtl.dat" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\learning_tools.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\libEGL.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\libGLESv2.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Locales\en-US.pak" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\MEIPreload\manifest.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\MEIPreload\preloaded_data.pb" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\microsoft_shell_integration.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\mip_core.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\mip_core_gn.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\mip_protection_sdk.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\mscopilot.exe" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge.dll.sig" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedgewebview2.exe" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedgewebview2.exe.sig" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge_100_percent.pak" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge_200_percent.pak" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge_elf.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msedge_wer.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\mspdf.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msvcp140.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\msvcp140_codecvt_ids.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\notification_helper.exe" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\oneauth.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\oneds.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\onnxruntime.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\onramp.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\PdfPreview\PdfPreviewHandler.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\prefs_enclave_x64.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\resources.pak" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\show_third_party_software_licenses.bat" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\telclient.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\manifest.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Advertising" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Analytics" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\CompatExceptions" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Content" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Cryptomining" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Entities" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Fingerprinting" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\LICENSE" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Other" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\Social" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Mu\TransparentAdvertisers" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Advertising" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Analytics" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Content" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Cryptomining" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Entities" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Fingerprinting" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\LICENSE" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Other" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Social" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\Trust Protection Lists\Sigma\Staging" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\v8_context_snapshot.bin" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vccorlib140.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vcruntime140.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vcruntime140_1.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vk_swiftshader.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vk_swiftshader_icd.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\vulkan-1.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\wdag.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\webview2_integration.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\WidevineCdm\manifest.json" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll.sig" />
+    <None Remove="C:\Users\balint\.nuget\packages\webview2.runtime.x64\142.0.3595.90\contentFiles\any\any\WebView2\wns_push_client.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="kreten_logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JWT" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3595.46" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+    <PackageReference Include="WebView2.Runtime.X64" Version="142.0.3595.90" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\kreten_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
