@@ -48,6 +48,7 @@ namespace kretenKreta.modules
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Add("apiKey", "21ff6c25-d1da-4a68-a811-c881a6057463");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", access_token);
+            //asd
 
             try
             {
