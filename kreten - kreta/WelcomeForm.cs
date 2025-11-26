@@ -79,15 +79,17 @@ namespace kretenKreta
             }
             if (TanluoAdatlap.getAdatlap(access_token, institute_code).StartsWith("Hiba"))
             {
-                MessageBox.Show("Hiba történt. \n A Kretén most bezáródik. Kérlek nyisd meg újra", "Hiba");
+                MessageBox.Show("Hiba történt.\nA Kretén most megpróbál új tokent kérni.", "Hiba");
                 try
                 {
-                    File.Delete(tokenFiles);
+                    //File.Delete(tokenFiles);
+                    tokenRefresh.tokenRefreshing(refresh_token, institute_code);
+                    MessageBox.Show("Sikeres tokenfrissítés\n a program bezáródik");
                     Application.Exit();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"❌ Hiba a kijelentkezéskor:\n{ex.Message}");
+                    MessageBox.Show($"❌ Hiba a kéréskor:\n{ex.Message}");
                 }
             }
             else

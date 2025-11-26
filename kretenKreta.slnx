@@ -10,8 +10,4 @@
     <BuildType Solution="All|*" Project="Debug" />
     <Platform Solution="*|x64" Project="x64" />
   </Project>
-  <Project Path="Kreten/Kreten.aiproj" Type="840c416c-b8f3-42bc-b0dd-f6bb14c9f8cb" Id="4e6e4864-78aa-4f64-83c4-c0743299429e">
-    <BuildType Project="All" />
-    <Platform Project="?" />
-  </Project>
 </Solution>
