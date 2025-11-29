@@ -84,7 +84,7 @@ namespace kretenKreta
                 {
                     //File.Delete(tokenFiles);
                     tokenRefresh.tokenRefreshing(refresh_token, institute_code);
-                    MessageBox.Show("Sikeres tokenfrissítés\n a program bezáródik");
+                    MessageBox.Show("Sikeres tokenfrissítés.\nA program bezáródik");
                     Application.Exit();
                 }
                 catch (Exception ex)
@@ -94,8 +94,12 @@ namespace kretenKreta
             }
             else
             {
-                //nev es suli
+                //nev es suli + ofo
                 nev.Text = TanluoAdatlap.getAdatlap(access_token, institute_code);
+
+                lblAtlag.Text = Atlag.getAtlag(access_token, institute_code);
+                //MessageBox.Show(Atlag.getAtlag(access_token, institute_code));
+
                 //verzio lekeres
                 var verzioKer = getVersion.verzioKeres;
                 string verzio = verzioKer();

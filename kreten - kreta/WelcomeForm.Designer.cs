@@ -34,6 +34,7 @@
             exit = new Button();
             lblVersion = new Label();
             listJegy = new ListBox();
+            lblAtlag = new Label();
             SuspendLayout();
             // 
             // nev
@@ -91,6 +92,15 @@
             listJegy.TabIndex = 7;
             listJegy.SelectedIndexChanged += listJegy_SelectedIndexChanged;
             // 
+            // lblAtlag
+            // 
+            lblAtlag.AutoSize = true;
+            lblAtlag.Location = new Point(422, 51);
+            lblAtlag.Name = "lblAtlag";
+            lblAtlag.Size = new Size(35, 15);
+            lblAtlag.TabIndex = 8;
+            lblAtlag.Text = "Atlag";
+            // 
             // WelcomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -100,6 +110,7 @@
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
             ControlBox = false;
+            Controls.Add(lblAtlag);
             Controls.Add(listJegy);
             Controls.Add(lblVersion);
             Controls.Add(exit);
@@ -127,5 +138,6 @@
         private Button exit;
         private Label lblVersion;
         private ListBox listJegy;
+        private Label lblAtlag;
     }
 }
