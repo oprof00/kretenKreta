@@ -13,7 +13,7 @@ namespace kretenKreta.modules
         {
             HttpClientHandler handler = new HttpClientHandler();
             HttpClient client = new HttpClient(handler);
-            client.BaseAddress = new Uri("https://raw.githubusercontent.com/oprof00/kreten/refs/heads/main/version.txt");
+            client.BaseAddress = new Uri("http://prof00.fejlessz.hu/kreten/version.txt");
 
             try
             {
