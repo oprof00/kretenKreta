@@ -1,15 +1,8 @@
-﻿//using Newtonsoft.Json;
-using kretenKreta.Properties;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Text;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
@@ -19,64 +12,90 @@ namespace kretenKreta.modules
     {
         public string Nev { get; set; }
     }
+
     public class Mod
     {
-        public Tantargy Tantargy { get; set; }
         public string Leiras { get; set; }
+        public string Nev { get; set; }
     }
+
     public class Jegy
     {
         public Tantargy Tantargy { get; set; }
         public Mod Mod { get; set; }
         public string SzovegesErtek { get; set; }
         public double SzamErtek { get; set; }
+        public int? SulySzazalekErteke { get; set; }
         public string ErtekeloTanarNeve { get; set; }
+        public string RogzitesDatuma { get; set; }
     }
+
     internal class Ertekelesek
     {
-        private static string jelleg;
-        private static string szamertek;
-        public static List<string> lista = new List<string>();
-
         public static string GetErtekelesek(string access_token, string institute_code)
         {
-            HttpClientHandler handler = new HttpClientHandler();
-            HttpClient client = new HttpClient(handler);
+            List<string> lista = new List<string>();
 
-            client.BaseAddress = new Uri($"https://{institute_code}.e-kreta.hu/ellenorzo/v3/sajat/Ertekelesek");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Add("apiKey", "21ff6c25-d1da-4a68-a811-c881a6057463");
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", access_token);
-
-            try
+            using (HttpClientHandler handler = new HttpClientHandler())
+            using (HttpClient client = new HttpClient(handler))
             {
-                var response = client.GetAsync(client.BaseAddress).Result;
-                string jsoncontent = response.Content.ReadAsStringAsync().Result;
+                client.BaseAddress = new Uri($"https://{institute_code}.e-kreta.hu/ellenorzo/v3/sajat/Ertekelesek");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Add("apiKey", "21ff6c25-d1da-4a68-a811-c881a6057463");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", access_token);
 
-                var options = new JsonSerializerOptions
+                try
                 {
-                    PropertyNameCaseInsensitive = true
-                };
+                    var response = client.GetAsync(client.BaseAddress).Result;
 
-                List<Jegy> grades = JsonSerializer.Deserialize<List<Jegy>>(jsoncontent, options);
-                
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        return $"Hiba történt: {response.StatusCode}";
+                    }
 
-                foreach (var grade in grades)
+                    string jsoncontent = response.Content.ReadAsStringAsync().Result;
+
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                        NumberHandling = JsonNumberHandling.AllowReadingFromString
+                    };
+
+                    List<Jegy> grades = JsonSerializer.Deserialize<List<Jegy>>(jsoncontent, options);
+
+                    if (grades == null) return "Nem érkeztek jegyek.";
+
+                    foreach (var grade in grades)
+                    {
+                        int szazalek = grade.SulySzazalekErteke ?? 0;
+
+                        if (szazalek == 0)
+                        {
+                            continue;
+                        }
+
+                        string tantargyNeve = grade.Tantargy?.Nev ?? "Ismeretlen tárgy";
+                        string modLeiras = grade.Mod?.Leiras ?? "Egyéb";
+                        string tanar = grade.ErtekeloTanarNeve ?? "Ismeretlen tanár";
+
+                        string jegyMegjelenites = grade.SzamErtek != 0
+                            ? grade.SzamErtek.ToString()
+                            : grade.SzovegesErtek;
+
+                        lista.Add($"{tantargyNeve}: {jegyMegjelenites} ({szazalek}%) - ({modLeiras}) |-- {tanar} --|");
+                    }
+
+                    return string.Join("\n", lista);
+                }
+                catch (HttpRequestException ex)
                 {
-                    string jegy = !string.IsNullOrEmpty(grade.SzovegesErtek)
-                        ? grade.SzamErtek.ToString()
-                        : grade.ErtekeloTanarNeve.ToString();
-
-                    lista.Add($"{grade.Tantargy.Nev}: {jegy} -( {grade.Mod.Leiras} ) |--{grade.ErtekeloTanarNeve}--|");
-                };
-                return string.Join("\n", lista);
-
+                    return $"Hálózati hiba: {ex.Message}";
+                }
+                catch (Exception ex)
+                {
+                    return $"Egyéb hiba: {ex.Message}";
+                }
             }
-            catch (HttpIOException ex)
-            {
-                return ex.Message;
-            }
-            
         }
     }
 }

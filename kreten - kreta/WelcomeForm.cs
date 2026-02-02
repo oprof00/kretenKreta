@@ -97,7 +97,7 @@ namespace kretenKreta
                 //nev es suli + ofo
                 nev.Text = TanluoAdatlap.getAdatlap(access_token, institute_code);
 
-                lblAtlag.Text = Atlag.getAtlag(access_token, institute_code);
+                lblAtlag.Text = $"Átlag: {Atlag.getAtlag(access_token, institute_code)}";
                 //MessageBox.Show(Atlag.getAtlag(access_token, institute_code));
 
                 //verzio lekeres
