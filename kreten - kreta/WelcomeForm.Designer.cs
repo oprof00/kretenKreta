@@ -35,6 +35,7 @@
             lblVersion = new Label();
             listJegy = new ListBox();
             lblAtlag = new Label();
+            showOrarend = new Button();
             SuspendLayout();
             // 
             // nev
@@ -101,6 +102,16 @@
             lblAtlag.TabIndex = 8;
             lblAtlag.Text = "Atlag";
             // 
+            // showOrarend
+            // 
+            showOrarend.Location = new Point(596, 2);
+            showOrarend.Name = "showOrarend";
+            showOrarend.Size = new Size(92, 39);
+            showOrarend.TabIndex = 9;
+            showOrarend.Text = "Órarend";
+            showOrarend.UseVisualStyleBackColor = true;
+            showOrarend.Click += showOrarend_Click;
+            // 
             // WelcomeForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -110,6 +121,7 @@
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
             ControlBox = false;
+            Controls.Add(showOrarend);
             Controls.Add(lblAtlag);
             Controls.Add(listJegy);
             Controls.Add(lblVersion);
@@ -139,5 +151,6 @@
         private Label lblVersion;
         private ListBox listJegy;
         private Label lblAtlag;
+        private Button showOrarend;
     }
 }

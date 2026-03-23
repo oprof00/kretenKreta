@@ -139,8 +139,13 @@ namespace kretenKreta
 
         private void listJegy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void showOrarend_Click(object sender, EventArgs e)
+        {
+            Orarend orarendForm = new Orarend();
+            orarendForm.ShowDialog();
+        }
     }
 }
